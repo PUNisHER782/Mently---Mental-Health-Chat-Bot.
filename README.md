@@ -6,7 +6,9 @@ A production-ready full-stack AI mental health companion with:
 - User authentication (JWT + bcrypt)
 - Conversation history persistence
 
-> Note: This project is for support and education. It is **not** a replacement for professional mental health services.
+> **Disclaimer**: This project is for support and education. It is **not** a replacement for professional mental health services.
+
+> **Crisis support**: If you or someone else is in danger or considering self-harm, contact your local emergency services or a local crisis hotline immediately.
 
 ---
 
@@ -67,6 +69,20 @@ A production-ready full-stack AI mental health companion with:
 - Node.js >= 16
 - MongoDB (local or MongoDB Atlas)
 - npm (or yarn)
+- **Ollama** running with model **`medgemma:4b`** (required for the AI model used by this project)
+
+### 0) Start Ollama (required)
+1. Install **Ollama** from https://ollama.com/
+2. Pull the model:
+   ```bash
+   ollama pull medgemma:4b
+   ```
+3. Ensure the Ollama server is running:
+   ```bash
+   ollama serve
+   ```
+
+> This project takes its model from **Ollama Medgemma:4b**.
 
 ### 1) Clone
 ```bash
@@ -127,8 +143,6 @@ VITE_API_URL=http://localhost:5000
 - No sensitive details in error messages
 - Secrets kept in `.env`
 
-**Crisis support:** If you or someone else is in danger or considering self-harm, contact your local emergency services or a local crisis hotline immediately.
-
 ---
 
 ## 🧪 Scripts
@@ -173,5 +187,5 @@ MIT License — feel free to use this project for personal or educational purpos
 
 **Made with ❤️ for mental wellness**
 
-*Last updated: May 8, 2026*
+*Last updated: May 8, 2026* 
 
