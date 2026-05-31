@@ -21,7 +21,7 @@ This guide covers deploying Mently to production on various platforms.
 ```env
 NODE_ENV=production
 PORT=5000
-MONGODB_URI=mongodb+srv://user:password@cluster.mongodb.net/mently
+MONGODB_URI=
 JWT_SECRET=your_very_secure_secret_key_min_32_chars
 JWT_EXPIRY=30d
 OPENAI_API_KEY=sk-prod-key
