@@ -33,7 +33,7 @@ cp .env.example .env
 **Required .env values:**
 ```
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/mently
+MONGODB_URI=
 JWT_SECRET=change_me_to_a_strong_secret_key
 OPENAI_API_KEY=sk-your-openai-key
 CLIENT_URL=http://localhost:3000
